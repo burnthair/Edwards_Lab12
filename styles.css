@@ -1,0 +1,47 @@
+header {
+  margin: 0;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: -2.5%;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+#notepad-container {
+
+}
+
+#inputs-container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 50%;
+  text-align: center;
+  background-color: #433;
+  border-radius: 3px;
+}
+
+#task-container {
+  margin: 0px auto;
+  padding: 20px 40px;
+  width: 50%;
+  font-family: 'Permanent Marker', cursive;
+  color: #235;
+  background-image: url('./img/notepad_row.png');
+}
+
+p#task-container {
+  font-size: 2em;
+  padding: 0;
+  padding-left: 200px;
+}

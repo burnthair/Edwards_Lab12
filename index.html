@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='listCreate' lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Permanent+Marker|Port+Lligat+Slab" rel="stylesheet">
+</head>
+<body ng-controller='listAdd'>
+  <header>
+    <h2>SO MUCH</h2>
+    <h1>TO DO</h1>
+  </header>
+  <div id="notepad-container">
+    <div id="inputs-container">
+      <input type="text" ng-model="listitem">
+      <button type="button" ng-click="addItem(listitem)">ADD TO LIST</button>
+      <button type="button" ng-click="removeItem(listitem)">REMOVE FROM LIST</button>
+      <input type="text" ng-model="search">
+    </div>
+    <div>
+      <p id="task-container" ng-repeat="task in toDoList | filter: search">{{ task }}</p>
+    </div>
+  </div>
+</body>
+</html>
