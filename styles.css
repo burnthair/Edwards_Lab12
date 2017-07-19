@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   margin: 0;
   text-align: center;
@@ -19,9 +24,24 @@ h2 {
 }
 
 input {
+  margin: 0 auto;
   padding: 4px;
   border: 2px solid #655;
   border-radius: 3px;
+  font-family: 'Port Lligat Slab', sans-serif;
+  width: 200px;
+}
+
+button {
+  padding: 4px;
+  background-color: #8C6;
+  border: 2px solid #655;
+  border-radius: 3px;
+  font-family: 'Port Lligat Slab', sans-serif;
+}
+
+#add {
+  width: 200px;
 }
 
 #notepad-container {
@@ -32,22 +52,28 @@ input {
 
 #inputs-container {
   margin: 0 auto;
-  padding: 40px;
-  width: 80%;
+  padding: 20px 0;
+  width: 100%;
   text-align: center;
   background-color: #433;
   border-radius: 3px;
 }
 
 .task-container {
-  display: inline;
+  display: inline-block;
   margin: 0px auto;
-  padding: 40px;
-  width: 80%;
+  width: 100%;
   font-family: 'Permanent Marker', cursive;
   font-size: 2em;
   padding: 0;
-  padding-left: 200px;
   color: #235;
   background-image: url('./img/notepad_row.png');
+}
+
+.list-item {
+  margin-left: 3em;
+}
+
+.list-item-button {
+  margin-left: 5em;
 }
