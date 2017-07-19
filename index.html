@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Anton|Permanent+Marker|Port+Lligat+Slab" rel="stylesheet">
 </head>
-<body ng-controller='listAdd'>
+<body ng-controller='listCtrl'>
   <header>
     <h2>SO MUCH</h2>
     <h1>TO DO</h1>
@@ -19,11 +19,14 @@
     <div id="inputs-container">
       <input type="text" ng-model="listitem" placeholder="what's on your mind?">
       <button type="button" ng-click="addItem(listitem)">ADD TO LIST</button>
-      <button type="button" ng-click="removeItem(listitem)">REMOVE FROM LIST</button>
+      <!-- <button type="button" ng-click="removeItem(listitem)">REMOVE FROM LIST</button> -->
       <input type="text" ng-model="search" placeholder="filter tasks">
     </div>
     <div>
-      <p id="task-container" ng-repeat="task in toDoList | filter: search">{{ task }}</p>
+      <div ng-repeat="task in toDoList | filter: search">
+        <button type='button' ng-click="removeItem($index)">remove</button>
+        <p class="task-container" id="{{ $index }}">{{ task }}</p>
+      </div>
     </div>
   </div>
 </body>

@@ -39,17 +39,15 @@ input {
   border-radius: 3px;
 }
 
-#task-container {
+.task-container {
+  display: inline;
   margin: 0px auto;
   padding: 40px;
   width: 80%;
   font-family: 'Permanent Marker', cursive;
-  color: #235;
-  background-image: url('./img/notepad_row.png');
-}
-
-p#task-container {
   font-size: 2em;
   padding: 0;
   padding-left: 200px;
+  color: #235;
+  background-image: url('./img/notepad_row.png');
 }
