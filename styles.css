@@ -18,14 +18,22 @@ h2 {
   font-size: 3em;
 }
 
-#notepad-container {
+input {
+  padding: 4px;
+  border: 2px solid #655;
+  border-radius: 3px;
+}
 
+#notepad-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
 }
 
 #inputs-container {
   margin: 0 auto;
   padding: 40px;
-  width: 50%;
+  width: 80%;
   text-align: center;
   background-color: #433;
   border-radius: 3px;
@@ -33,8 +41,8 @@ h2 {
 
 #task-container {
   margin: 0px auto;
-  padding: 20px 40px;
-  width: 50%;
+  padding: 40px;
+  width: 80%;
   font-family: 'Permanent Marker', cursive;
   color: #235;
   background-image: url('./img/notepad_row.png');
